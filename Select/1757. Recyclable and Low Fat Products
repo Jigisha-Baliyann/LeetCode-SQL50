@@ -1,0 +1,5 @@
+PROBLEM: https://leetcode.com/problems/recyclable-and-low-fat-products/description/
+
+
+SOLUTION:
+select product_id from Products where low_fats='Y' && recyclable='Y';
