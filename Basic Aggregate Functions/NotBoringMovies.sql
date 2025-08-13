@@ -1,4 +1,4 @@
--- PROBLEM: https://leetcode.com/problems/not-boring-movies/description/
+-- PROBLEM: (620) https://leetcode.com/problems/not-boring-movies/description/
 
 
 -- SOLUTION:
