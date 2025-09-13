@@ -1,0 +1,12 @@
+PROBLEM: https://leetcode.com/problems/biggest-single-number/description/
+
+
+SOLUTION:
+
+SELECT MAX(num) num
+FROM (
+    SELECT num 
+    FROM MyNumbers
+    GROUP BY num
+    HAVING  COUNT(num)=1)
+AS unique_num;
