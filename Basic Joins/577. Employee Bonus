@@ -1,0 +1,8 @@
+PROBLEM : https://leetcode.com/problems/employee-bonus/description/
+
+SOLUTION : 
+
+SELECT E.name, B.bonus 
+FROM Employee E LEFT JOIN Bonus B 
+ON E.empId = B.empId 
+WHERE bonus<1000 OR Bonus IS NULL;
