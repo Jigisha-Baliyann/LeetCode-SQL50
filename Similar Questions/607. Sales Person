@@ -1,0 +1,10 @@
+PROBLEM : https://leetcode.com/problems/sales-person/description/
+
+SOLUTION : 
+
+SELECT S.name 
+FROM SalesPerson S
+WHERE S.name NOT IN (
+    SELECT S.name FROM SalesPerson S, Company C, Orders O 
+    WHERE O.com_id = C.com_id AND O.sales_id = S.sales_id 
+    AND C.name = "RED");
